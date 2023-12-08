@@ -67,7 +67,7 @@
   <!-- Movie Tab -->
   <div class="tab-pane fade show active" id="movie-list" role="tabpanel">
     <div class="container" style="opacity: 1;">
-      <h1 class="card-title" style="color: #FFC700">September, 2023</h1>
+      <h1 class="card-title" style="color: #FFC700">September , 2023 </h1>
       <br>
       <div class="row">
         <!-- Movie Card 1 -->
@@ -99,7 +99,6 @@
             </div>
         </div>
     </div>
-        <!-- Movie Card 2 -->
 
     <div class="card dark" style=" flex-direction: row;
       max-width: 75rem;
@@ -121,7 +120,6 @@
             </div>
         </div>
     </div>
-        <!-- Movie Card 3 -->
 
     <div class="card dark" style=" flex-direction: row;
     max-width: 75rem;
@@ -143,7 +141,6 @@
           </div>
       </div>
   </div>
-        <!-- Movie Card 4 -->
 
   <div class="card dark" style=" flex-direction: row;
   max-width: 75rem;
@@ -154,7 +151,7 @@
     flex-direction: row;
     justify-content: space-between;">
         <div class="text-section">
-          <a href="/trailer" style="text-decoration: none;">
+          <a href="/trailer19" style="text-decoration: none;">
             <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[19] %></h5>
             <p class="card-text" style="color: black;"><%= movieDescription[19] %></p>
           </a>
@@ -166,59 +163,65 @@
     </div>
 </div>
 
-<div class="card dark" style="max-width: 75rem; box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 20px; margin-bottom: 20px;"></div>
+<!-- วาง Card เพิ่มตรงนี้ -->
+<!-- Movie Tab -->
+<div class="tab-pane fade show active" id="movie-list" role="tabpanel">
+  <div class="container" style="opacity: 1;">
+    <h1 class="card-title" style="color: #FFC700">October , 2023 </h1>
+    <br>
+    <div class="row">
+      <!-- Movie Card 2 -->
+      <div class="card dark" style="max-width: 75rem; box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
+        
+        <!-- Movie card content -->
 
-<h1 class="card-title" style="color: #FFC700">October, 2023</h1>
+      </div>
+      <!-- Repeat the structure for additional movie cards -->
 
-<div class="card dark" style="max-width: 75rem; box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 20px; margin-bottom: 20px;"></div>
+      <!-- เริ่มก๊อปแปะโค้ด Card ต่อตรงนี้ได้เลย -->
+      <div class="card dark" style=" flex-direction: row;
+    max-width: 75rem;
+    border: 0;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
+      <img src="./img/<%= movieImages[7] %>" class="card-img-top upcardimg" alt="...">
+      <div class="card-body" style="  display: flex;
+      flex-direction: row;
+      justify-content: space-between;">
+          <div class="text-section">
+            <a href="/trailer7" style="text-decoration: none;">
+              <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[7] %></h5>
+              <p class="card-text" style="color: black;"><%= movieDescription[7] %></p>
+            </a>
+          </div>
+          <div class="cta-section">
+              <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+              <label class="btn " for="btn-check">+ Watchlist</label>
+          </div>
+      </div>
+  </div>
 
-<!-- Movie Card 5 -->
+  <div class="card dark" style=" flex-direction: row;
+    max-width: 75rem;
+    border: 0;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
+      <img src="./img/<%= movieImages[9] %>" class="card-img-top upcardimg" alt="...">
+      <div class="card-body" style="  display: flex;
+      flex-direction: row;
+      justify-content: space-between;">
+          <div class="text-section">
+            <a href="/trailer9" style="text-decoration: none;">
+              <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[9] %></h5>
+              <p class="card-text" style="color: black;"><%= movieDescription[9] %></p>
+            </a>
+          </div>
+          <div class="cta-section">
+              <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+              <label class="btn " for="btn-check">+ Watchlist</label>
+          </div>
+      </div>
+  </div>
 
-<div class="card dark" style=" flex-direction: row;
-  max-width: 75rem;
-  border: 0;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
-    <img src="./img/<%= movieImages[7] %>" class="card-img-top upcardimg" alt="...">
-    <div class="card-body" style="  display: flex;
-    flex-direction: row;
-    justify-content: space-between;">
-        <div class="text-section">
-          <a href="/trailer7" style="text-decoration: none;">
-            <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[7] %></h5>
-            <p class="card-text" style="color: black;"><%= movieDescription[7] %></p>
-          </a>
-        </div>
-        <div class="cta-section">
-            <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-            <label class="btn " for="btn-check">+ Watchlist</label>
-        </div>
-    </div>
-</div>
-
-<!-- Movie Card 6 -->
-<div class="card dark" style=" flex-direction: row;
-  max-width: 75rem;
-  border: 0;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
-    <img src="./img/<%= movieImages[9] %>" class="card-img-top upcardimg" alt="...">
-    <div class="card-body" style="  display: flex;
-    flex-direction: row;
-    justify-content: space-between;">
-        <div class="text-section">
-          <a href="/trailer9" style="text-decoration: none;">
-            <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[9] %></h5>
-            <p class="card-text" style="color: black;"><%= movieDescription[9] %></p>
-          </a>
-        </div>
-        <div class="cta-section">
-            <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-            <label class="btn " for="btn-check">+ Watchlist</label>
-        </div>
-    </div>
-</div>
-
-<!-- Movie Card 7 -->
-<div class="card dark" style=" flex-direction: row;
+  <div class="card dark" style=" flex-direction: row;
   max-width: 75rem;
   border: 0;
   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
@@ -239,59 +242,65 @@
     </div>
 </div>
 
-<br>
-<!-- Movie Card 8 -->
-<div class="card dark" style=" flex-direction: row;
-  max-width: 75rem;
-  border: 0;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
-    <img src="./img/<%= movieImages[0] %>" class="card-img-top upcardimg" alt="...">
-    <div class="card-body" style="  display: flex;
-    flex-direction: row;
-    justify-content: space-between;">
-        <div class="text-section">
-          <a href="/trailer" style="text-decoration: none;">
-            <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[0] %></h5>
-            <p class="card-text" style="color: black;"><%= movieDescription[11] %><%= movieDescription[0] %></p>
-          </a>
-        </div>
-        <div class="cta-section">
-            <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-            <label class="btn " for="btn-check">+ Watchlist</label>
-        </div>
-    </div>
-</div>
 
-<!-- Movie Card 9 -->
-<div class="card dark" style=" flex-direction: row;
-  max-width: 75rem;
-  border: 0;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
-    <img src="./img/<%= movieImages[2] %>" class="card-img-top upcardimg" alt="...">
-    <div class="card-body" style="  display: flex;
-    flex-direction: row;
-    justify-content: space-between;">
-        <div class="text-section">
-          <a href="/trailer2" style="text-decoration: none;">
-            <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[2] %></h5>
-            <p class="card-text" style="color: black;"><%= movieDescription[2] %></p>
-          </a>
-        </div>
-        <div class="cta-section">
-            <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-            <label class="btn " for="btn-check">+ Watchlist</label>
-        </div>
-    </div>
-</div>
+<!-- Movie Tab -->
+<div class="tab-pane fade show active" id="movie-list" role="tabpanel">
+  <div class="container" style="opacity: 1;">
+    <h1 class="card-title" style="color: #FFC700">November , 2023 </h1>
+    <br>
+    <div class="row">
+      <!-- Movie Card 3 -->
+      <div class="card dark" style="max-width: 75rem; box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
+        
+        <!-- Movie card content -->
 
-<div class="card dark" style="max-width: 75rem; box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 20px; margin-bottom: 20px;"></div>
+      </div>
+      <!-- Repeat the structure for additional movie cards -->
 
-<h1 class="card-title" style="color: #FFC700">November, 2023</h1>
+      <!-- เริ่มก๊อปแปะโค้ด Card ต่อตรงนี้ได้เลย -->
+      <div class="card dark" style=" flex-direction: row;
+    max-width: 75rem;
+    border: 0;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
+      <img src="./img/<%= movieImages[0] %>" class="card-img-top upcardimg" alt="...">
+      <div class="card-body" style="  display: flex;
+      flex-direction: row;
+      justify-content: space-between;">
+          <div class="text-section">
+            <a href="/trailer" style="text-decoration: none;">
+              <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[0] %></h5>
+              <p class="card-text" style="color: black;"><%= movieDescription[0] %></p>
+            </a>
+          </div>
+          <div class="cta-section">
+              <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+              <label class="btn " for="btn-check">+ Watchlist</label>
+          </div>
+      </div>
+  </div>
 
-<div class="card dark" style="max-width: 75rem; box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 20px; margin-bottom: 20px;"></div>
+  <div class="card dark" style=" flex-direction: row;
+    max-width: 75rem;
+    border: 0;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
+      <img src="./img/<%= movieImages[2] %>" class="card-img-top upcardimg" alt="...">
+      <div class="card-body" style="  display: flex;
+      flex-direction: row;
+      justify-content: space-between;">
+          <div class="text-section">
+            <a href="/trailer2" style="text-decoration: none;">
+              <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[2] %></h5>
+              <p class="card-text" style="color: black;"><%= movieDescription[2] %></p>
+            </a>
+          </div>
+          <div class="cta-section">
+              <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+              <label class="btn " for="btn-check">+ Watchlist</label>
+          </div>
+      </div>
+  </div>
 
-<!-- Movie Card 10 -->
-<div class="card dark" style=" flex-direction: row;
+  <div class="card dark" style=" flex-direction: row;
   max-width: 75rem;
   border: 0;
   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
@@ -312,33 +321,26 @@
     </div>
 </div>
 
-<!-- Movie Card 11 -->
-  <div class="card dark" style=" flex-direction: row;
-  max-width: 75rem;
-  border: 0;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
-    <img src="./img/<%= movieImages[5] %>" class="card-img-top upcardimg" alt="...">
-    <div class="card-body" style="  display: flex;
-    flex-direction: row;
-    justify-content: space-between;">
-        <div class="text-section">
-          <a href="/trailer5" style="text-decoration: none;">
-            <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[5] %></h5>
-            <p class="card-text" style="color: black;"><%= movieDescription[5] %></p>
-          </a>
-        </div>
-        <div class="cta-section">
-            <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-            <label class="btn " for="btn-check">+ Watchlist</label>
-        </div>
-    </div>
+<div class="card dark" style=" flex-direction: row;
+max-width: 75rem;
+border: 0;
+box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
+  <img src="./img/<%= movieImages[5] %>" class="card-img-top upcardimg" alt="...">
+  <div class="card-body" style="  display: flex;
+  flex-direction: row;
+  justify-content: space-between;">
+      <div class="text-section">
+        <a href="/trailer5" style="text-decoration: none;">
+          <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[5] %></h5>
+          <p class="card-text" style="color: black;"><%= movieDescription[5] %></p>
+        </a>
+      </div>
+      <div class="cta-section">
+          <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+          <label class="btn " for="btn-check">+ Watchlist</label>
+      </div>
+  </div>
 </div>
-
-<!-- วาง Card เพิ่มตรงนี้ -->
-
-<br>
-
-<!-- Movie Card 12 -->
 
 <div class="card dark" style=" flex-direction: row;
 max-width: 75rem;
@@ -370,7 +372,7 @@ box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px
   <!-- TV Show Tab -->
   <div class="tab-pane fade" id="tvshow-list" role="tabpanel">
     <div class="container" style="opacity: 1;">
-      <h1 class="card-title" style="color: #FFC700">TV Show Suggestion</h1>
+      <h1 class="card-title" style="color: #FFC700">Oct 27, 2023 [TV Show-Tab]</h1>
       <br>
       <div class="row">
         <!-- TV Show Card 1 -->
@@ -400,116 +402,76 @@ box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px
             <div class="cta-section">
                 <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
                 <label class="btn " for="btn-check">+ Watchlist</label>
+                </div>
             </div>
         </div>
-    </div>
 
-      
-
-    <div class="card dark" style=" flex-direction: row;
-      max-width: 75rem;
-      border: 0;
-      box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
-        <img src="./img/<%= movieImages[6] %>" class="card-img-top upcardimg" alt="...">
-        <div class="card-body" style="  display: flex;
-        flex-direction: row;
-        justify-content: space-between;">
-            <div class="text-section">
-              <a href="/traile6" style="text-decoration: none;">
-                <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[6] %></h5>
-                <p class="card-text" style="color: black;"><%= movieDescription[6] %></p>
-              </a>
-            </div>
-            <div class="cta-section">
-                <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-                <label class="btn " for="btn-check">+ Watchlist</label>
-            </div>
-        </div>
-    </div>
-
-    <div class="card dark" style=" flex-direction: row;
-    max-width: 75rem;
-    border: 0;
-    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
-      <img src="./img/<%= movieImages[22] %>" class="card-img-top upcardimg" alt="...">
-      <div class="card-body" style="  display: flex;
-      flex-direction: row;
-      justify-content: space-between;">
-          <div class="text-section">
-            <a href="/trailer22" style="text-decoration: none;">
-              <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[22] %></h5>
-              <p class="card-text" style="color: black;"><%= movieDescription[22] %></p>
-            </a>
+          <div class="card dark" style=" flex-direction: row;
+            max-width: 75rem;
+            border: 0;
+            box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
+              <img src="./img/<%= movieImages[6] %>" class="card-img-top upcardimg" alt="...">
+              <div class="card-body" style="  display: flex;
+              flex-direction: row;
+              justify-content: space-between;">
+                  <div class="text-section">
+                    <a href="/trailer6" style="text-decoration: none;">
+                      <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[6] %></h5>
+                      <p class="card-text" style="color: black;"><%= movieDescription[6] %></p>
+                    </a>
+                  </div>
+                  <div class="cta-section">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="btn " for="btn-check">+ Watchlist</label>
+                  </div>
+              </div>
           </div>
-          <div class="cta-section">
-              <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-              <label class="btn " for="btn-check">+ Watchlist</label>
+
+            <div class="card dark" style=" flex-direction: row;
+            max-width: 75rem;
+            border: 0;
+            box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
+              <img src="./img/<%= movieImages[22] %>" class="card-img-top upcardimg" alt="...">
+              <div class="card-body" style="  display: flex;
+              flex-direction: row;
+              justify-content: space-between;">
+                  <div class="text-section">
+                    <a href="/trailer22" style="text-decoration: none;">
+                      <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[22] %></h5>
+                      <p class="card-text" style="color: black;"><%= movieDescription[22] %></p>
+                    </a>
+                  </div>
+                  <div class="cta-section">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="btn " for="btn-check">+ Watchlist</label>
+                  </div>
+              </div>
           </div>
-      </div>
+
+            <div class="card dark" style=" flex-direction: row;
+            max-width: 75rem;
+            border: 0;
+            box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
+              <img src="./img/<%= movieImages[46] %>" class="card-img-top upcardimg" alt="...">
+              <div class="card-body" style="  display: flex;
+              flex-direction: row;
+              justify-content: space-between;">
+                  <div class="text-section">
+                    <a href="/trailer46" style="text-decoration: none;">
+                      <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[46] %></h5>
+                      <p class="card-text" style="color: black;"><%= movieDescription[46] %></p>
+                    </a>
+                  </div>
+                  <div class="cta-section">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="btn " for="btn-check">+ Watchlist</label>
+                  </div>
+              </div>
+          </div>
+    </div>
   </div>
 
-  <div class="card dark" style=" flex-direction: row;
-  max-width: 75rem;
-  border: 0;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
-    <img src="./img/<%= movieImages[46] %>" class="card-img-top upcardimg" alt="...">
-    <div class="card-body" style="  display: flex;
-    flex-direction: row;
-    justify-content: space-between;">
-        <div class="text-section">
-          <a href="/trailer46" style="text-decoration: none;">
-            <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[46] %></h5>
-            <p class="card-text" style="color: black;"><%= movieDescription[46] %></p>
-          </a>
-        </div>
-        <div class="cta-section">
-            <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-            <label class="btn " for="btn-check">+ Watchlist</label>
-        </div>
-    </div>
-</div>
 
-<div class="card dark" style=" flex-direction: row;
-  max-width: 75rem;
-  border: 0;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
-    <img src="./img/<%= movieImages[47] %>" class="card-img-top upcardimg" alt="...">
-    <div class="card-body" style="  display: flex;
-    flex-direction: row;
-    justify-content: space-between;">
-        <div class="text-section">
-          <a href="/trailer47" style="text-decoration: none;">
-            <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[47] %></h5>
-            <p class="card-text" style="color: black;"><%= movieDescription[47] %></p>
-          </a>
-        </div>
-        <div class="cta-section">
-            <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-            <label class="btn " for="btn-check">+ Watchlist</label>
-        </div>
-    </div>
-</div>
-
-<div class="card dark" style=" flex-direction: row;
-  max-width: 75rem;
-  border: 0;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px;">
-    <img src="./img/<%= movieImages[48] %>" class="card-img-top upcardimg" alt="...">
-    <div class="card-body" style="  display: flex;
-    flex-direction: row;
-    justify-content: space-between;">
-        <div class="text-section">
-          <a href="/trailer48" style="text-decoration: none;">
-            <h5 class="card-title fw-bold" style="color: #FFC700;"><%= movieNames[48] %></h5>
-            <p class="card-text" style="color: black;"><%= movieDescription[48] %></p>
-          </a>
-        </div>
-        <div class="cta-section">
-            <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-            <label class="btn " for="btn-check">+ Watchlist</label>
-        </div>
-    </div>
-</div>
 
 <!-- วาง Card เพิ่มตรงนี้ -->
 
@@ -529,8 +491,6 @@ box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18); margin-top: 10px; margin-bottom: 10px
   
         </div>
       
-
-            <!-- Footer -->
             <!-- Footer -->
             <footer class="bg-black py-2 my-0 mt-5" style="box-shadow: 15px 0px 20px #FFC700;">
               <div class="container-fulid">
