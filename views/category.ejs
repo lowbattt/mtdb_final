@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTDb</title>
+    <link rel="icon" href="/img/MTDb_logo.png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Kanit:wght@500&family=Oswald:wght@600;700&display=swap');
+      </style>
+    <script src="func.js" defer></script>
+</head>
+<body style="background-color: black; font-family: 'Kanit', sans-serif;">
+    <!-- Navbar -->
+    <div style="background-color: black;">
+    <nav class="navbar navbar-expand-lg fixed-top" style="z-index: 5;">
+        <div class="container">
+          <a class="navbar-brand col-md-1 mb-md-1 py-0 d-flex align-items-center justify-content-center justify-content-md-between" href="/"><img src="/img/MTDb_logo.png" style="height: 80px; width: 80px;"></a>
+          <div class="navbar-brand col-md-6 mb-md-1 py-3 d-flex align-items-center justify-content-center justify-content-md-between">
+            <form class="w-100 d-flex " role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success ms-2" type="submit">Search</button>
+              </form>
+          </div>
+          <button class="navbar-toggler shadow-none border-0 me-1 text-white tline" type="button" data-bs-toggle="collapse" data-bs-target="#btn" aria-controls="btn" aria-expanded="false" aria-label="Toggle navigation">
+            <i class='bx bx-menu bx-md'></i>
+          </button>
+          <div class="sidebar navbar-collapse ul-bg" id="btn">
+            <ul class="navbar-nav sidebar ms-auto mb-2 mb-lg-0" navitem>
+                <li><a href="/category" class="nav-link px-2 navitem" >Category</a></li>
+                <li><a href="/upcoming" class="nav-link px-2 navitem" >Up coming</a></li>
+                <li><a href="/watchlist" class="nav-link px-2 navitem" >Watchlist</a></li>
+                <li><a href="/login" class="nav-link px-2 navitem" >Log In</a></li>
+            </ul>
+           
+        </div>
+    </div>
+<div style="margin-top: 5px;"  ></style>
+            
+        </nav>
+</div> 
+
+<!-- Carousel -->
+< <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <img src=./img/<%= movieImages[37] %>
+        class="d-block w-100 c-img" alt="Slide 1">
+      <div class="carousel-caption top-5 mt-0">
+        <p class="mt-1 text-uppercase carousel-text-headder"><%= movieNames[37] %></p>
+        <h1 class="display-1 mt-3 fw-bolder text-capitalize carousel-text">R | Action, Adventure, Comedy </h1>
+        <p><a href="/trailer37" class="btn text-white btngreen px-4 py-2 fs-4 mt-3">Watch the Trailer</a></p>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src=./img/<%= movieImages[38] %> class="d-block w-100 c-img" alt="Slide 2">
+      <div class="carousel-caption top-5 mt-0">
+        <p class="mt-1 text-uppercase carousel-text-headder"><%= movieNames[38] %></p>
+        <h1 class="display-1 mt-0 fw-bolder text-capitalize carousel-text">R | Drama, Sport </h1>
+        <p><a href="/trailer38" class="btn text-white btngreen px-4 py-2 fs-4 mt-0">Watch the Trailer</a></p>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src=./img/<%= movieImages[39] %>
+        class="d-block w-100 c-img" alt="Slide 3">
+      <div class="carousel-caption top-5 mt-0">
+        <p class="mt-1 text-uppercase carousel-text-headder"><%= movieNames[39] %></p>
+        <h1 class="display-1 mt-0  fw-bolder text-capitalize carousel-text">R | Drama, Mystery, Thriller</h1>
+        <p><a href="/trailer39" class="btn text-white btngreen px-4 py-2 fs-4 mt-0">Watch the Trailer</a></p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<h2 class="display-3 fw-bold my-3 ms-5" style="color: #FFC700; text-align: start;">Category</h2>
+<hr style="border-width: 5px; color: white;">
+<div class="justify-content-start container" style="display: flex; word-spacing: 0.3rem;">
+    <div class=""></div>
+    <div style="flex-grow: 1;"></div>
+</div>
+
+<!-- Content -->
+
+
+<div class="row flex-sm-row space">
+  <div class="col-sm-12 col-md-4 col-lg-4 " style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+    <div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" class="">
+      <img src=./img/<%= movieImages[35] %> class="card-img-top " alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700">Action</h4>
+        <p class="card-text">Die Hard, James Bond, The Avengers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+    <div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[20] %> class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700">Adventure</h4>
+        <p class="card-text">King Kong, Crouching Tiger Hidden Dragon</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+<div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[27] %> class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700">Fantasy</h4>
+        <p class="card-text">Harry Potter, The Neverending Story</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="space"></div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+    <div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[10] %> class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700">Comedy</h4>
+        <p class="card-text">Superbad, This Is Spinal Tap, Scary Movie</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+    <div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[26] %> class="card-img-top " alt="...">
+      </a>
+      <div class="card-body" >
+        <h4 class="card-title" style="color: #FFC700">Drama</h4>
+        <p class="card-text">Taxi Driver, Do The Right Thing, Schindler’s List</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+    <div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[18] %> class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700">Science Fiction</h4>
+        <p class="card-text">Star Trek, Alien, Blade Runner, Inception</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="space"></div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+    <div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[4] %> class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700">Romance</h4>
+        <p class="card-text">Brokeback Mountain, Pretty Woman, Titanic</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+    <div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[29] %> class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700">Historical Film</h4>
+        <p class="card-text">Gandhi, Apollo 13, The Diary of Anne Frank</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+<div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[17] %> class="card-img-top " alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700" >Biography</h4>
+        <p class="card-text">Oppenheimer, Greenbook</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="space"></div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+<div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[32] %> class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700" >Thriller</h4>
+        <p class="card-text">Psycho, Silence of the Lambs, The Sixth Sense</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+    <div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[30] %> class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700" >Horror</h4>
+        <p class="card-text">Dracula, The Exorcist, Rosemary’s Baby</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4 bg-transparent" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+    <div class="card" style="width: 100%; height: 100%;">
+      <a href="/categoryAction" >
+      <img src=./img/<%= movieImages[6] %> class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title" style="color: #FFC700" >TV Show</h4>
+        <p class="card-text">Breaking Bad, Planet Earth, Blue Planet II</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-black py-2 my-0 mt-5" style="box-shadow: 15px 0px 20px #FFC700;">
+  <div class="container-fulid">
+<ul class="nav justify-content-center pb-3 mb-3" style="border-color:#FFC700;">
+  <li class="nav-item"><a href="/" class="nav-link navitem px-2 ">Home</a></li>
+  <li class="nav-item"><a href="/category" class="nav-link navitem px-2 ">Category</a></li>
+  <li class="nav-item"><a href="/upcoming" class="nav-link navitem px-2 ">Up coming</a></li>
+  <li class="nav-item"><a href="/watchlist" class="nav-link navitem px-2 ">Watchlist</a></li>
+</ul>
+<p class="text-center" style="color: #FFC700;">© 198-304 by MTDb.com, Inc.</p>
+</div>
+</footer>
+</body>
+</html>
