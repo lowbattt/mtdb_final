@@ -4,7 +4,7 @@
 
 const getMovies = require('./getMovies');
 
-const CategoryBio = async (req, res) => {
+const categoryBio = async (req, res) => {
   try {
     // Assuming movie IDs you want to retrieve
     const movieIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
@@ -32,4 +32,4 @@ res.render('categoryBio', { movieNames, movieRates, movieGenre1, movieGenre2, mo
   }
 };
 
-module.exports = CategoryBio;
+module.exports = categoryBio;

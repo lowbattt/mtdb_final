@@ -49,7 +49,6 @@
 
 
 // //Category
-// const categoryAction = require('./controllers/CategoryAction')
 // const categoryAdventure = require('./controllers/categoryAdventure')
 // const categoryFantasy = require('./controllers/CategoryFantasy')
 // const categoryComedy = require('./controllers/CategoryComedy')
@@ -259,18 +258,18 @@ const watchlistRouter = require('./controllers/watchlistController');
 
 
 //Category
-const categoryAction = require('./controllers/CategoryAction')
+const categoryAction = require('./controllers/categoryAction')
 const categoryAdventure = require('./controllers/categoryAdventure')
-const categoryFantasy = require('./controllers/CategoryFantasy')
-const categoryComedy = require('./controllers/CategoryComedy')
-const categoryDrama = require('./controllers/CategoryDrama')
-const categorySciFi = require('./controllers/CategorySciFi')
-const categoryRomance = require('./controllers/CategoryRomance')
-const CategoryHistory = require('./controllers/CategoryHistory');
-const categoryBio = require('./controllers/CategoryBio')
-const categoryThriller = require('./controllers/CategoryThriller')
-const categoryHorror = require('./controllers/CategoryHorror')
-const categoryTV = require('./controllers/CategoryTV')
+const categoryFantasy = require('./controllers/categoryFantasy')
+const categoryComedy = require('./controllers/categoryComedy')
+const categoryDrama = require('./controllers/categoryDrama')
+const categorySciFi = require('./controllers/categorySciFi')
+const categoryRomance = require('./controllers/categoryRomance')
+const CategoryHistory = require('./controllers/categoryHistory');
+const categoryBio = require('./controllers/categoryBio')
+const categoryThriller = require('./controllers/categoryThriller')
+const categoryHorror = require('./controllers/categoryHorror')
+const categoryTV = require('./controllers/categoryTV')
 
   
 
@@ -329,14 +328,26 @@ const trailer49 = require('./controllers/trailer49')
 const authMiddleware = require('./middleware/auth');
 const redirectMiddleware = require('./middleware/redirect');
 
-app.use(express.static('public'));
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(flash());
+// app.use(express.static('public'));
+// app.use(express.json());
+// app.use(express.urlencoded());
+// app.use(flash());
+
+// app.use(expressSession({
+//   secret: "node secret",
+// }));
 
 app.use(expressSession({
   secret: "node secret",
 }));
+
+app.use(flash());
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// app.use('/', router);
 
 app.use("*", (req, res, next) => {
   loggedIn = req.session.userId;
@@ -347,7 +358,6 @@ app.set('view engine', 'ejs');
 
 // Use the router for all routes
 app.use('/', router);
-// app.use('/watchlist', watchlistRouter);
 
 router.get('/', indexController);
 router.get('/login', redirectMiddleware, loginController);
