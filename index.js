@@ -63,7 +63,6 @@
 // const categoryTV = require('./controllers/CategoryTV')
 
 // Hello, it's me
-  
 
 // //Trailers
 // const trailer1 = require('./controllers/trailer1')
@@ -248,7 +247,7 @@ const loginController = require('./controllers/loginController');
 const registerController = require('./controllers/registerController');
 const storeUserController = require('./controllers/storeUserController');
 const loginUserController = require('./controllers/loginUser');
-const UPcom = require('./controllers/upComming');
+const upComming = require('./controllers/upComming');
 const trailer = require('./controllers/trailer');
 const profileController = require('./controllers/ProfileController');
 const Logout = require('./controllers/logoutController');
@@ -315,6 +314,16 @@ const trailer36 = require('./controllers/trailer36')
 const trailer37 = require('./controllers/trailer37')
 const trailer38 = require('./controllers/trailer38')
 const trailer39 = require('./controllers/trailer39')
+const trailer40 = require('./controllers/trailer40')
+const trailer41 = require('./controllers/trailer41')
+const trailer42 = require('./controllers/trailer42')
+const trailer43 = require('./controllers/trailer43')
+const trailer44 = require('./controllers/trailer44')
+const trailer45 = require('./controllers/trailer45')
+const trailer46 = require('./controllers/trailer46')
+const trailer47 = require('./controllers/trailer46')
+const trailer48 = require('./controllers/trailer48')
+const trailer49 = require('./controllers/trailer49')
 
 // Middleware
 const authMiddleware = require('./middleware/auth');
@@ -338,7 +347,7 @@ app.set('view engine', 'ejs');
 
 // Use the router for all routes
 app.use('/', router);
-app.use('/watchlist', watchlistRouter);
+// app.use('/watchlist', watchlistRouter);
 
 router.get('/', indexController);
 router.get('/login', redirectMiddleware, loginController);
@@ -346,12 +355,12 @@ router.get('/logout', Logout);
 router.get('/register', registerController);
 router.post('/user/register', storeUserController);
 router.post('/user/login', loginUserController);
-router.get('/upcoming', UPcom);
+router.get('/upcoming', upComming);
 router.get('/trailer', trailer);
 router.get('/Profile', authMiddleware, profileController);
 router.get('/nav', nav);
 router.get('/getMovies', getMovies);
-router.get('/watchlist', watchlistController);
+// router.get('/watchlist', watchlistController);
 router.get('/category', categoryController);
 
 // Category
@@ -408,7 +417,16 @@ router.get('/trailer36', trailer36);
 router.get('/trailer37', trailer37);
 router.get('/trailer38', trailer38);
 router.get('/trailer39', trailer39);
-
+router.get('/trailer40', trailer40);
+router.get('/trailer41', trailer41);
+router.get('/trailer42', trailer42);
+router.get('/trailer43', trailer43);
+router.get('/trailer44', trailer44);
+router.get('/trailer45', trailer45);
+router.get('/trailer46', trailer46);
+router.get('/trailer47', trailer47);
+router.get('/trailer48', trailer48);
+router.get('/trailer49', trailer49);
 
 app.listen(4000, () => {
   console.log("App listening on port 4000");

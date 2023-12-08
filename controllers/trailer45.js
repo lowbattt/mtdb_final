@@ -1,10 +1,6 @@
-// module.exports = (req, res) => {
-//     res.render('upcoming')
-// }
-
 const getMovies = require('./getMovies');
 
-const upComming = async (req, res) => {
+const trailer45 = async (req, res) => {
   try {
     // Assuming movie IDs you want to retrieve
     const movieIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
@@ -24,7 +20,7 @@ const upComming = async (req, res) => {
     const movieVideos = movieDetails.map(movie => movie.videos); 
 
 
-res.render('upcoming', { movieNames, movieRates, movieGenre1, movieGenre2, movieDescription, movieWriter, movieStars, movieImages, movieVideos });
+res.render('trailer45', { movieNames, movieRates, movieGenre1, movieGenre2, movieDescription, movieWriter, movieStars, movieImages, movieVideos });
 
   } catch (error) {
     console.error('Error:', error);
@@ -32,5 +28,4 @@ res.render('upcoming', { movieNames, movieRates, movieGenre1, movieGenre2, movie
   }
 };
 
-
-module.exports = upComming;
+module.exports = trailer45;
