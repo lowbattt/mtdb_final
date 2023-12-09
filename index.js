@@ -375,7 +375,7 @@ router.get('/trailer', trailer);
 router.get('/Profile', authMiddleware, profileController);
 router.get('/nav', nav);
 router.get('/getMovies', getMovies);
-// router.get('/watchlist', watchlistController);
+router.get('/watchlist', watchlistController);
 router.get('/category', categoryController);
 
 // Category
